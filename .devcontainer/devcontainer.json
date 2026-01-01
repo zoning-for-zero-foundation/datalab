@@ -6,17 +6,21 @@
     "mounts": [
         "source=${localWorkspaceFolder}/../zzproxies,target=/workspaces/zzproxies,type=bind"
     ],
+    "workspaceFolder": "/workspaces/datalab/datalab.code-workspace",
+    
     "customizations": {
         "vscode": {
             "extensions": [
                 "ms-python.python",
                 "ms-python.vscode-pylance",
                 "ms-toolsai.jupyter",
-                "ms-toolsai.jupyter-renderers",
-            ]
+                "ms-toolsai.jupyter-renderers"
+            ],
+            "settings": {
+                "python.analysis.extraPaths": ["/workspaces/zzproxies/src"]
+            }
         }
     },
-    "workspaceFolder": "/workspaces/datalab",
     "remoteUser": "vscode",
     "postCreateCommand": "pip install -r .devcontainer/requirements.txt && pip install -e '/workspaces/zzproxies[data,science,viz]'"
 }
