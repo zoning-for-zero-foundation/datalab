@@ -6,7 +6,7 @@
     "mounts": [
         "source=${localWorkspaceFolder}/../zzproxies,target=/workspaces/zzproxies,type=bind"
     ],
-    "workspaceFolder": "/workspaces/datalab/datalab.code-workspace",
+    "workspaceFolder": "/workspaces/datalab",
     
     "customizations": {
         "vscode": {

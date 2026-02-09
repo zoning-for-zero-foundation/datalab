@@ -4,7 +4,7 @@ The research arm of the Foundation. This is where we bridge urban plans, mathema
 
 ### Development Environment Setup
 
-We use a "Twin-Repo" architecture. **datalab** acts as the experimental environment where we draft new planning blueprints with climate models (proxy, while **zzproxies** acts as the production-grade library for leverage them in practice!
+We use a "Twin-Repo" architecture. **datalab** acts as the experimental environment where we draft new planning blueprints with climate models, while **zzproxies** acts as the production-grade library for leverage them in practice!
 
 
 #### 1. Prerequisites
@@ -13,20 +13,19 @@ We use a "Twin-Repo" architecture. **datalab** acts as the experimental environm
 
 #### 2. Local Directory Structure
 For the automated environment to work, both repositories must sit in the same parent directory on your machine:
-```text
+```text«
 /my-climate-proxy-development/
-├── zzproxies/  # git clone https://github.com/zzproxies/zzproxies.git
-└── datalab/    # git clone https://github.com/zzproxies/datalab.git (<- Open this in VS Code)
+├── zzproxies/  # Clone: https://github.com/zzproxies/zzproxies.git
+└── datalab/    # Clone: https://github.com/zzproxies/datalab.git
 ```
-  
+
 #### 3. Launching the Environment
 
-Open the **datalab** folder in VS Code & reopen in container.
-
-The build process will:  
+- Open the **datalab** folder in VS Code & reopen in container.
+    The build process will:  
     - Construct a Python 3.12.3 environment with needed libraries (see Dockerfile).  
     - Live-mount the zzproxies folder from your laptop into the container.  
     - Install zzproxies in Editable Mode (pip install -e).  
+- After build process, from File -> Open workspace from File.." and select "datalab.code-workspace"  
 
-
-_For Contribution Code of Conduct read CONTRIBUTE.md_
+You can now develop on both repositories simultaneously! Your changes in zzproxies will be instantly available in datalab. When you have a new proxy candidate ready, please submit a PR to the zzproxies repository!

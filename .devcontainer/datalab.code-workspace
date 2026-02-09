@@ -2,11 +2,11 @@
     "folders": [
         {
             "name": "DataLab (Project)",
-            "path": "."
+            "path": ".."
         },
         {
             "name": "ZZProxies (Library)",
-            "path": "../zzproxies"
+            "path": "../../zzproxies"
         }
     ],
     "settings": {}
