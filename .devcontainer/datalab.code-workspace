@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "name": "DataLab (Project)",
+            "path": ".."
+        },
+        {
+            "name": "ZZProxies (Library)",
+            "path": "../../zzproxies"
+        }
+    ],
+    "settings": {}
+}
