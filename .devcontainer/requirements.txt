@@ -1,4 +1,4 @@
-# for Python 3.12.3 in ghcr.io/osgeo/gdal:ubuntu-small-latest (2025)
+# for Python in ghcr.io/osgeo/gdal:ubuntu-small-latest
 duckdb==1.4.3
 pyarrow==22.0.0
 shapely==2.1.2

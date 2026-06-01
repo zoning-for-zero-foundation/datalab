@@ -23,7 +23,7 @@ For the automated environment to work, both repositories must sit in the same pa
 
 - Open the **datalab** folder in VS Code & reopen in container.
     The build process will:  
-    - Construct a Python 3.12.3 environment with needed libraries (see Dockerfile).  
+    - Construct a Python environment with needed libraries (see Dockerfile).  
     - Live-mount the zzproxies folder from your laptop into the container.  
     - Install zzproxies in Editable Mode (pip install -e).  
 - After build process, from File -> Open workspace from File.." and select "datalab.code-workspace"  
